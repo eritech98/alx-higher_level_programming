@@ -5,4 +5,4 @@ def print_last_digit(number):
     if number < 0:
         mode_ = (number * -1) % 10
     print("{}".format(mode_), end="")
-    return mod
+    return mode_

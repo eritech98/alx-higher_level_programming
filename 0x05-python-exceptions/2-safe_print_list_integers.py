@@ -3,7 +3,7 @@
 def safe_print_list_integers(my_list=[], x=0):
     """Prints the first x elements of a list and only integers."""
     e = 0
-    e = 0
+    y = 0
     try:
         while y < x:
             if isinstance(my_list[y], int):

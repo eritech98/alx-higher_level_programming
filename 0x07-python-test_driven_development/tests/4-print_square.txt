@@ -1,0 +1,44 @@
+The 4-print_square module test.
+================================
+
+Using print_square function.
+-----------------------------
+
+First import it from the module:
+    >>> print_square = __import__('4-print_square').print_square
+
+Tests:
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+    >>> print_square(0)
+    >>> print_square(1)
+    #
+    >>> try:
+    ...     print_square(-1)
+    ... except Exception as e:
+    ...     print(e)
+    ... 
+    size must be >= 0
+    >>> 
+    >>> try:
+    ...     print_square(1.2)
+    ... except Exception as e:
+    ...     print(e)
+    ... 
+    size must be an integer
+    >>> try:
+    ...     print_square(1.0)
+    ... except Exception as e:
+    ...     print(e)
+    ... 
+    size must be an integer
+    >>> try:
+    ...     print_square([9])
+    ... except Exception as e:
+    ...     print(e)
+    ... 
+    size must be an integer
+    >>> 

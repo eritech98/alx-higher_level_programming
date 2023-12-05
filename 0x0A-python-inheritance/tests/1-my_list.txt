@@ -1,0 +1,46 @@
+The 1-my_list module test
+==========================
+
+Using the class "MyList" and the "print_sorted" public method.
+---------------------------------------------------------------
+
+First import the class from the module:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Tests:
+
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+    >>> 
+    >>> str = MyList()
+    >>> str.append(1)
+    >>> str.append(2)
+    >>> str.append("Hello")
+    >>> str.append([1, 2, 3])
+    >>> 
+    >>> print(str)
+    [1, 2, 'Hello', [1, 2, 3]]
+    >>> try:
+    ...     str.print_sorted()
+    ... except Exception as e:
+    ...     print(e)
+    ... 
+    '<' not supported between instances of 'str' and 'int'
+    >>> 
+    >>> print(str)
+    [1, 2, 'Hello', [1, 2, 3]]
+    >>> lis = MyList()
+    >>> lis.print_sorted()
+    []
+    >>> 
